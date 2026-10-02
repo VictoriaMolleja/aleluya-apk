@@ -1,0 +1,6 @@
+{
+  "name": "Aleluya Biblia",
+  "description": "Tu espacio de lectura bíblica 100% offline, sin anuncios, con sonidos de naturaleza y lectura sin distracciones.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

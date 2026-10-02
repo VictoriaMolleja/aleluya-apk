@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4A5D4E"/>
+      <stop offset="50%" stop-color="#3A4A3E"/>
+      <stop offset="100%" stop-color="#243027"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  
+  <!-- Outer Rounded Container -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Divine Aura / Ring -->
+  <circle cx="256" cy="240" r="160" stroke="#FDE68A" stroke-opacity="0.18" stroke-width="2" fill="none"/>
+  <circle cx="256" cy="240" r="190" stroke="#FDE68A" stroke-opacity="0.08" stroke-width="1.5" stroke-dasharray="6 6" fill="none"/>
+
+  <!-- Open Holy Book -->
+  <g filter="url(#shadow)">
+    <!-- Book cover shadow / edges -->
+    <path d="M120 330 C180 320, 240 335, 256 345 C272 335, 332 320, 392 330 L392 200 C332 190, 272 205, 256 215 C240 205, 180 190, 120 200 Z" fill="#2E241E" />
+    
+    <!-- Left Page Base -->
+    <path d="M126 322 C184 314, 242 328, 254 336 L254 206 C242 198, 184 184, 126 192 Z" fill="#F4EBE1" />
+    
+    <!-- Right Page Base -->
+    <path d="M386 322 C328 314, 270 328, 258 336 L258 206 C270 198, 328 184, 386 192 Z" fill="#FAF6F0" />
+    
+    <!-- Spine center shadow line -->
+    <line x1="256" y1="206" x2="256" y2="338" stroke="#D1C3B2" stroke-width="2" stroke-linecap="round" />
+    
+    <!-- Subtle Scripture Lines (Left Page) -->
+    <line x1="150" y1="225" x2="230" y2="228" stroke="#B8A896" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+    <line x1="150" y1="245" x2="230" y2="248" stroke="#B8A896" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+    <line x1="150" y1="265" x2="230" y2="268" stroke="#B8A896" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+    <line x1="150" y1="285" x2="210" y2="288" stroke="#B8A896" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Subtle Scripture Lines (Right Page) -->
+    <line x1="282" y1="228" x2="362" y2="225" stroke="#B8A896" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+    <line x1="282" y1="248" x2="362" y2="245" stroke="#B8A896" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+    <line x1="282" y1="268" x2="362" y2="265" stroke="#B8A896" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+    <line x1="282" y1="288" x2="342" y2="285" stroke="#B8A896" stroke-width="2.5" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Bookmark Ribbon -->
+    <path d="M253 206 Q256 280 262 360 L270 345 L278 360 Q262 280 259 206 Z" fill="#B91C1C" opacity="0.9"/>
+  </g>
+
+  <!-- Golden Cross & Radiant Beam above book -->
+  <g>
+    <!-- Radiant Starburst / Cross Rays -->
+    <path d="M256 110 L256 195" stroke="url(#goldGrad)" stroke-width="7" stroke-linecap="round"/>
+    <path d="M226 142 L286 142" stroke="url(#goldGrad)" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="256" cy="142" r="14" fill="#FDE68A" fill-opacity="0.3"/>
+  </g>
+
+  <!-- Olive Branch Accents below -->
+  <g opacity="0.85">
+    <path d="M210 395 C230 405, 282 405, 302 395" stroke="#A7F3D0" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+    <circle cx="235" cy="402" r="3" fill="#A7F3D0"/>
+    <circle cx="256" cy="405" r="3.5" fill="#FDE68A"/>
+    <circle cx="277" cy="402" r="3" fill="#A7F3D0"/>
+  </g>
+
+  <!-- Monogram text 'AB' in elegant serif -->
+  <text x="256" y="445" font-family="'Cinzel', 'Lora', serif" font-size="24" font-weight="700" fill="#FDE68A" letter-spacing="4" text-anchor="middle">ALELUYA BIBLIA</text>
+</svg>

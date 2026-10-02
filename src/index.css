@@ -1,0 +1,163 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-main: #EFECE6;
+    --bg-card: #FAF8F5;
+    --text-primary: #3D322C;
+    --text-secondary: #7A6B5D;
+    --border-subtle: #E2DDD5;
+    --accent: #5C4033;
+  }
+
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-family: 'Lora', Georgia, serif;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Themes */
+  body[data-theme='day'] {
+    --bg-main: #EFECE6;
+    --bg-card: #FAF8F5;
+    --text-primary: #3D322C;
+    --text-secondary: #7A6B5D;
+    --border-subtle: #E2DDD5;
+    --accent: #5C4033;
+  }
+
+  body[data-theme='sepia'] {
+    --bg-main: #F4EBE1;
+    --bg-card: #ECE1D4;
+    --text-primary: #3E2F23;
+    --text-secondary: #6E5034;
+    --border-subtle: #E0D3C5;
+    --accent: #6E5034;
+  }
+
+  body[data-theme='oled'] {
+    --bg-main: #121619;
+    --bg-card: #1B2126;
+    --text-primary: #E2E8F0;
+    --text-secondary: #94A3B8;
+    --border-subtle: #2A333C;
+    --accent: #60A5FA;
+  }
+
+  body[data-theme='bosque'] {
+    --bg-main: #F3F1EC;
+    --bg-card: #FAF9F6;
+    --text-primary: #282420;
+    --text-secondary: #5C4033;
+    --border-subtle: #D8D2C6;
+    --accent: #4A5D4E;
+  }
+
+  body[data-theme='mar'] {
+    --bg-main: #EEF3F6;
+    --bg-card: #F7FAFC;
+    --text-primary: #1D2B36;
+    --text-secondary: #4A708B;
+    --border-subtle: #D4E1E8;
+    --accent: #2B4C5E;
+  }
+
+  body[data-theme='olivo'] {
+    --bg-main: #F0F2EE;
+    --bg-card: #F8FAF7;
+    --text-primary: #232A24;
+    --text-secondary: #4A5D4E;
+    --border-subtle: #D5DCD3;
+    --accent: #3F5243;
+  }
+
+  body[data-theme='atardecer'] {
+    --bg-main: #F7EFEA;
+    --bg-card: #FFF8F5;
+    --text-primary: #33201A;
+    --text-secondary: #7C4A3A;
+    --border-subtle: #E7D5CD;
+    --accent: #7C4A3A;
+  }
+
+  body[data-theme='rosa_baby'] {
+    --bg-main: #FDF2F5;
+    --bg-card: #FFF8FA;
+    --text-primary: #3C2229;
+    --text-secondary: #7D4C59;
+    --border-subtle: #F3D5DD;
+    --accent: #B85876;
+  }
+}
+
+/* Custom scrollbar for clean sacred look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(120, 100, 80, 0.2);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(120, 100, 80, 0.35);
+}
+
+/* Font family classes */
+.font-serif-biblical {
+  font-family: 'Lora', Georgia, serif;
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', Georgia, serif;
+}
+
+.font-sans-clean {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+.font-dyslexic {
+  font-family: system-ui, -apple-system, sans-serif;
+  letter-spacing: 0.05em;
+  word-spacing: 0.1em;
+}
+
+/* Pleasant silent smooth transitions */
+@keyframes modalEnter {
+  0% {
+    opacity: 0;
+    transform: scale(0.96) translateY(6px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes screenFade {
+  0% {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: modalEnter 0.22s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-tab-switch {
+  animation: screenFade 0.2s ease-out forwards;
+}
+

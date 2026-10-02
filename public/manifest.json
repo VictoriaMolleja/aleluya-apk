@@ -1,0 +1,15 @@
+{
+  "short_name": "Aleluya",
+  "name": "Aleluya Biblia - Lectura Inmersiva",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#EFECE6",
+  "theme_color": "#EFECE6",
+  "display": "standalone"
+}
